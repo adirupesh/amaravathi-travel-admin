@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "type": "hotel",
+    "name": "Amaravati Grand Stay",
+    "location": "Amaravati, Andhra Pradesh",
+    "description": "Comfortable family rooms, breakfast and local pickup assistance.",
+    "price": 3200,
+    "status": "active",
+    "imageKey": null,
+    "createdAt": "2026-09-22T00:00:00.000Z",
+    "updatedAt": "2026-09-22T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "type": "car",
+    "name": "Innova Crysta",
+    "location": "Vijayawada and Amaravati",
+    "description": "Air-conditioned six-seat vehicle with an experienced local driver.",
+    "price": 4500,
+    "status": "active",
+    "imageKey": null,
+    "createdAt": "2026-09-22T00:00:00.000Z",
+    "updatedAt": "2026-09-22T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "type": "area",
+    "name": "Amaravati Heritage Circuit",
+    "location": "Amaravati",
+    "description": "A curated route covering the stupa, museum and riverside viewpoints.",
+    "price": 1800,
+    "status": "draft",
+    "imageKey": null,
+    "createdAt": "2026-09-22T00:00:00.000Z",
+    "updatedAt": "2026-09-22T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "type": "experience",
+    "name": "Krishna River Sunset",
+    "location": "Krishna River",
+    "description": "A guided evening river experience with refreshments.",
+    "price": 1250,
+    "status": "active",
+    "imageKey": null,
+    "createdAt": "2026-09-22T00:00:00.000Z",
+    "updatedAt": "2026-09-22T00:00:00.000Z"
+  }
+]

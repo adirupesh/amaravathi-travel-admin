@@ -1,3 +1,0 @@
-import { env } from "cloudflare:workers";
-import { NextResponse } from "next/server";
-export async function GET(_request:Request,{params}:{params:Promise<{key:string[]}>}) { if(!env.BUCKET) return new NextResponse("Not found",{status:404}); const key=(await params).key.join("/"); if(!key.startsWith("inventory/")) return new NextResponse("Not found",{status:404}); const object=await env.BUCKET.get(key); if(!object) return new NextResponse("Not found",{status:404}); const headers=new Headers(); object.writeHttpMetadata(headers); headers.set("cache-control","private, max-age=3600"); return new NextResponse(object.body,{headers}); }

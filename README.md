@@ -1,6 +1,6 @@
 # Amaravathi Travel Admin
 
-Private operations portal for Amaravathi Tours & Travel. It manages hotels, cars, service areas and experiences, including cover-image uploads, pricing and publishing status.
+Private operations portal for Amaravathi Tours & Travel. It manages hotels, cars, service areas and experiences using a static JSON payload.
 
 ## Run locally
 
@@ -9,7 +9,7 @@ Private operations portal for Amaravathi Tours & Travel. It manages hotels, cars
 3. Run `pnpm build`.
 4. Run `pnpm start`.
 
-The app uses a Cloudflare D1 database named `DB` and an R2 bucket named `BUCKET`. Apply the SQL files in `drizzle/` before first use. Production access is protected by ChatGPT sign-in and the Sites owner-only audience setting.
+Starter records live in `data/inventory.json`. Changes and uploaded images are saved in the current browser. Use **Export JSON** to make a portable backup and **Import JSON** to restore or replace the data. Production access is protected by ChatGPT sign-in and the Sites owner-only audience setting.
 
 ## Checks
 
