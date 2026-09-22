@@ -3,11 +3,11 @@ import { NextResponse } from "next/server";
 
 function settings() {
   const values = env as unknown as Record<string, string | undefined>;
-  return { url: values.GOOGLE_SHEETS_WEB_APP_URL, token: values.GOOGLE_SHEETS_SYNC_TOKEN };
+  return { url: values.GOOGLE_SHEETS_WEB_APP_URL || process.env.GOOGLE_SHEETS_WEB_APP_URL, token: values.GOOGLE_SHEETS_SYNC_TOKEN || process.env.GOOGLE_SHEETS_SYNC_TOKEN };
 }
 
 function authorized(request: Request) {
-  return Boolean(request.headers.get("oai-authenticated-user-id"));
+  return Boolean(request.headers.get("oai-authenticated-user-id")) || process.env.NODE_ENV === "development";
 }
 
 export async function GET(request: Request) {
