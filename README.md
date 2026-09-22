@@ -15,3 +15,8 @@ Starter records live in `data/inventory.json`. Changes and uploaded images are s
 
 - `pnpm typecheck`
 - `pnpm build`
+
+## Google Sheets sync
+
+The production admin synchronizes inventory with Google Sheets through the Apps Script in `google-apps-script/Code.gs`. Deploy it as a Web app, then configure `GOOGLE_SHEETS_WEB_APP_URL` and the matching secret `GOOGLE_SHEETS_SYNC_TOKEN` in Sites. Browser storage remains as an offline backup.
+
